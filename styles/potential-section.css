@@ -1,0 +1,111 @@
+.potential-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 0;
+}
+
+/* Title */
+.potential-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.potential-highlight {
+  color: #4a4a9e;
+}
+
+/* Content Container */
+.potential-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+/* Box Styling */
+.potential-box {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  max-width: 720px;
+  gap: 30px;
+}
+
+/* Image Section */
+.potential-image-wrapper {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.potential-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.potential-icons {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.potential-icon {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  padding: 6px;
+  font-size: 1rem;
+}
+
+.potential-icon:nth-child(1) {
+  top: 5px;
+  left: -10px;
+}
+
+/* Euro */
+.potential-icon:nth-child(2) {
+  bottom: 10px;
+  left: 5px;
+}
+
+/* Dollar */
+.potential-icon:nth-child(3) {
+  top: 10px;
+  right: -10px;
+}
+
+/* User */
+
+/* Text Content */
+.potential-text {
+  flex: 1;
+}
+
+.potential-subtitle {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.potential-description {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.potential-container {
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .potential-box {
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -1,0 +1,102 @@
+.how-it-works {
+  padding: 50px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.step {
+  text-align: center;
+  max-width: 250px;
+  position: relative;
+  max-height: 224px;
+}
+
+.icon {
+  font-size: 40px;
+  color: #3b5998;
+  margin-bottom: 15px;
+}
+
+.step-circle {
+  background: #3b5998;
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  border-radius: 50%;
+  margin: 10px auto;
+  border: 3px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 14px;
+  color: #666;
+  padding: 0 10px;
+}
+
+/* Line Between Steps */
+.steps-container::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  /* Align with the step circles */
+  left: 10%;
+  width: 80%;
+  height: 3px;
+  background: #3b5998;
+  z-index: -1;
+}
+
+.help-text-container {
+  color: white;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  #help-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+  .help-section {
+    padding: 40px;
+  }
+
+  .steps-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .steps-container::before {
+    display: none;
+    /* Remove line on mobile for better spacing */
+  }
+}

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/hero-section.css">
+    <link rel="stylesheet" href="styles/services-section.css">
+    <link rel="stylesheet" href="styles/finance-section.css">
+    <link rel="stylesheet" href="styles/potential-section.css">
+    <link rel="stylesheet" href="styles/help-section.css">
+    <link rel="stylesheet" href="styles/how-it-works.css">
+    <link rel="stylesheet" href="styles/testimonial-section.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/29dcc67fdd.js" crossorigin="anonymous"></script>
+    <title>Responsive Navbar</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">MuneemJi</div>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Connect</a></li>
+            </ul>
+        </div>
+        <div class="buttons">
+            <button class="btn">Start Now</button>
+            <button class="btn primary">Book Free Consultation</button>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+    <div class="floating-button-container">
+        <button class="floating-button">Start Now</button>
+    </div>
+    <main>
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-heading">
+                        <div class="highlight-text-container">
+                            <span class="highlight-text">Bigger Profits</span>
+                        </div>
+                        <div class="sub-heading-container">
+                            <span class="sub-heading">With Muneemji</span>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="images/business-man.jpeg" alt="Businessman Image">
+                    </div>
+                </div>
+
+                <div>
+                    <p class="hero-text">
+                        Make what matters most effortless. Stay organized, save time, and make smarter decisions with
+                        Muneemji.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary me-3" style="    background: #3d52a0;
+    border: none;">Start Now</button>
+                        <button class="btn btn-outline-primary">Book Free Consultation</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services-section">
+            <h2 class="section-heading">Muneemji Helps You With Everything</h2>
+
+            <div class="tabs-container">
+                <button class="tab active" data-tab="company">Company Registration</button>
+                <button class="tab" data-tab="accounting">Accounting</button>
+                <button class="tab" data-tab="goods">Goods & Services</button>
+                <button class="tab" data-tab="licenses">Business Licenses</button>
+            </div>
+
+            <div class="content-container">
+                <div class="image-card">
+                    <img src="images/3.png" alt="Business Woman">
+                </div>
+                <div class="text-content">
+                    <h3 id="content-title">Company Registration</h3>
+                    <p id="content-description">
+                        What sets any marketing strategy apart is the human behind it. Share your goals, best creative
+                        assets, and
+                        who your most valuable audiences are to steer AI in the right direction.
+                    </p>
+                    <a href="#" class="explore-link">Explore <span>&#10148;</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="finance-section">
+            <div class="finance-container">
+
+                <!-- Left Content -->
+                <div class="finance-text">
+                    <p class="finance-subtitle">Benefits</p>
+                    <h2 class="finance-heading">With Muneemji, <br> you’re in control of your finances</h2>
+                    <p class="finance-description">
+                        What sets any marketing strategy apart is the human behind it.
+                        Share your goals, best creative assets, and who your most valuable audiences
+                        are to steer AI in the right direction.
+                    </p>
+
+                    <div class="finance-points">
+                        <div class="finance-point">
+                            <p>Work Sans. Work Sans is based loosely on early grotesque fonts.</p>
+                            <div class="point-icon">
+                                <i class="fa-solid fa-chart-simple"></i>
+                            </div>
+
+                        </div>
+                        <div class="finance-point">
+                            <p>Work Sans. Work Sans is based loosely on early grotesque fonts.</p>
+                            <div class="point-icon">
+                                <i class="fa-solid fa-file"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Image Section -->
+                <div class="finance-image-box">
+                    <div class="finance-image-wrapper">
+                        <img src="images/5.png" alt="Business Meeting" class="finance-image">
+                        <span class="finance-badge">📊 Business Growth</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="potential-section">
+            <div class="potential-container">
+                <!-- Heading -->
+                <h2 class="potential-title">
+                    The Potential Of Muneemji, <br>
+                    <span class="potential-highlight">For Your Business</span>
+                </h2>
+
+                <!-- Content Blocks -->
+                <div class="potential-content">
+                    <div class="potential-box">
+                        <div class="potential-image-wrapper">
+                            <img src="images/potential.png" alt="User" class="potential-image">
+                        </div>
+                        <div class="potential-text">
+                            <h3 class="potential-subtitle">2100 People Already Trust Us</h3>
+                            <p class="potential-description">
+                                What sets any marketing strategy apart is the human behind it.
+                                Share your goals, best creative assets, and who your most valuable
+                                audiences are to steer AI in the right direction.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="potential-box">
+                        <div class="potential-image-wrapper">
+                            <img src="images/potential.png" alt="User" class="potential-image">
+                        </div>
+                        <div class="potential-text">
+                            <h3 class="potential-subtitle">30+ Years Of Excellence</h3>
+                            <p class="potential-description">
+                                What sets any marketing strategy apart is the human behind it.
+                                Share your goals, best creative assets, and who your most valuable
+                                audiences are to steer AI in the right direction.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="potential-box">
+                        <div class="potential-image-wrapper">
+                            <img src="images/potential.png" alt="User" class="potential-image">
+                        </div>
+                        <div class="potential-text">
+                            <h3 class="potential-subtitle">30+ Years Of Excellence</h3>
+                            <p class="potential-description">
+                                What sets any marketing strategy apart is the human behind it.
+                                Share your goals, best creative assets, and who your most valuable
+                                audiences are to steer AI in the right direction.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="help-section">
+            <div id="help-section">
+                <div class="help-image-container">
+                    <img src="images/image.png" alt="Expert Assistance">
+                </div>
+                <div class="help-text-container">
+                    <h1>We’re Here To Help</h1>
+                    <p>Contact us today and get the answers you need—fast, friendly, and hassle-free! We’re here to take
+                        the stress out of managing your business.</p>
+                    <button class="help-button">Start With An Expert</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="finance-section mission-statement-section">
+            <div class="finance-container">
+
+                <!-- Left Content -->
+                <div class="finance-text">
+                    <h2 class="finance-heading">Mumneemji's</h2>
+                    <h2 class="finance-heading">Mission Statement</h2>
+                    <p class="finance-description">
+                        What sets any marketing strategy apart is the human behind it. Share your goals, best creative
+                        assets and who your most valuable audiences are to steer AI in the right direction. What sets
+                        any marketing strategy apart is the human behind it.
+                    </p>
+
+                    <div class="finance-points">
+                        <div class="finance-point">
+                            <div class="point-icon">
+                                <i class="fa-solid fa-chart-simple"></i>
+                            </div>
+                            <p>Work Sans. Work Sans is based loosely on early grotesque fonts.</p>
+
+                        </div>
+                        <div class="finance-point">
+                            <div class="point-icon">
+                                <i class="fa-solid fa-file"></i>
+                            </div>
+                            <p>Work Sans. Work Sans is based loosely on early grotesque fonts.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Image Section -->
+                <div class="finance-image-box">
+                    <div class="finance-image-wrapper">
+                        <img src="images/5.png" alt="Business Meeting" class="finance-image">
+                        <span class="finance-badge">📊 Business Growth</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="step-circle">1</div>
+                    <h3>Connect</h3>
+                    <p>Contact us for a tailored proposal with services and pricing to match your needs.</p>
+                </div>
+                <div class="step">
+                    <div class="icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="step-circle">2</div>
+                    <h3>Share Documents</h3>
+                    <p>A dedicated accountant will guide your setup process and answer any questions you have.</p>
+                </div>
+                <div class="step">
+                    <div class="icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="step-circle">3</div>
+                    <h3>Onboarding</h3>
+                    <p>Make your payment to begin receiving services immediately.</p>
+                </div>
+                <div class="step">
+                    <div class="icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="step-circle">4</div>
+                    <h3>Job Done</h3>
+                    <p>Make your payment to begin receiving services immediately.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="testimonial-section">
+            <h2 class="testimonial-title">What <span>Success Story</span> Looks Like</h2>
+
+            <div class="testimonial-container">
+                <div class="testimonial-card">
+                    <img id="testimonial-img" src="image.png" alt="User Image">
+                    <div class="testimonial-text">
+                        <p id="testimonial-quote">“These guys know what they do - I am 100% satisfied with whatever
+                            services I have tried from them.”</p>
+                        <h3 id="testimonial-name">Ranjeet Pancholi, Founder & CEO</h3>
+                        <p id="testimonial-company">Avi Petroshine</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-indicator">
+                <button id="prevBtn" class="nav-btn">◀</button>
+                <span id="testimonial-index">1/5</span>
+                <button id="nextBtn" class="nav-btn">▶</button>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+
+        $(document).ready(function () {
+            const texts = ["Bigger Profits", "Smart Decisions", "Quick Insights", "Money Clarity"];
+            const colors = ["rgb(61, 82, 160)", "rgb(234, 170, 0)", "rgb(0, 140, 72)", "rgb(174, 7, 8)"];
+            const imgBgColors = ["rgb(180, 204, 255)", "rgb(255, 235, 150)", "rgb(170, 255, 200)", "rgb(255, 180, 180)"];
+
+
+            let index = 0;
+
+            function rotateText() {
+                $(".highlight-text").fadeOut(500, function () {
+                    $(this).text(texts[index]).css("color", colors[index]).fadeIn(500);
+                    $(".hero-image").css('background-color', imgBgColors[index]) // Change text & color
+                    index = (index + 1) % texts.length; // Cycle through text and colors
+                });
+            }
+
+            setInterval(rotateText, 3000); // Change text & color every 3 seconds
+        });
+
+
+
+        function toggleMenu() {
+            document.querySelector('.nav-container').classList.toggle('active');
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const tabs = document.querySelectorAll(".tab");
+            const title = document.getElementById("content-title");
+            const description = document.getElementById("content-description");
+
+            const contentData = {
+                company: {
+                    title: "Company Registration",
+                    description: "What sets any marketing strategy apart is the human behind it. Share your goals, best creative assets, and who your most valuable audiences are to steer AI in the right direction."
+                },
+                accounting: {
+                    title: "Accounting",
+                    description: "Effortlessly manage your business finances with our expert accounting services, ensuring compliance and financial clarity."
+                },
+                goods: {
+                    title: "Goods & Services",
+                    description: "Expand your business reach with the best goods and services. Optimize your operations and customer satisfaction."
+                },
+                licenses: {
+                    title: "Business Licenses",
+                    description: "Ensure smooth operations with the right business licenses. We help you acquire, renew, and manage them efficiently."
+                }
+            };
+
+            tabs.forEach(tab => {
+                tab.addEventListener("click", () => {
+                    tabs.forEach(t => t.classList.remove("active"));
+                    tab.classList.add("active");
+
+                    const selectedTab = tab.getAttribute("data-tab");
+                    title.textContent = contentData[selectedTab].title;
+                    description.textContent = contentData[selectedTab].description;
+                });
+            });
+        });
+
+
+
+
+
+        const testimonials = [
+            {
+                img: "image.png",
+                quote: "These guys know what they do - I am 100% satisfied with whatever services I have tried from them.",
+                name: "Ranjeet Pancholi, Founder & CEO",
+                company: "Avi Petroshine"
+            },
+            {
+                img: "image.png",
+                quote: "Amazing experience! The team is highly professional and delivers beyond expectations.",
+                name: "Sarah Johnson, Marketing Head",
+                company: "Tech Solutions"
+            },
+            {
+                img: "image.png",
+                quote: "Their service is top-notch! I would highly recommend them to anyone looking for quality and reliability.",
+                name: "David Brown, COO",
+                company: "Innovate Corp"
+            },
+            {
+                img: "image.png",
+                quote: "I have used their services multiple times, and they never fail to impress me. Fantastic work!",
+                name: "Emily Carter, Business Owner",
+                company: "Carter Enterprises"
+            },
+            {
+                img: "image.png",
+                quote: "Professional, efficient, and reliable. What more could you ask for? Absolutely love their work!",
+                name: "John Doe, Founder",
+                company: "StartUp Hub"
+            }
+        ];
+
+        let currentIndex = 0;
+
+        // Selecting elements
+        const imgElement = document.getElementById("testimonial-img");
+        const quoteElement = document.getElementById("testimonial-quote");
+        const nameElement = document.getElementById("testimonial-name");
+        const companyElement = document.getElementById("testimonial-company");
+        const indexElement = document.getElementById("testimonial-index");
+
+        // Buttons
+        document.getElementById("prevBtn").addEventListener("click", () => {
+            currentIndex = (currentIndex === 0) ? testimonials.length - 1 : currentIndex - 1;
+            updateTestimonial();
+        });
+
+        document.getElementById("nextBtn").addEventListener("click", () => {
+            currentIndex = (currentIndex === testimonials.length - 1) ? 0 : currentIndex + 1;
+            updateTestimonial();
+        });
+
+        // Update Testimonial
+        function updateTestimonial() {
+            const testimonial = testimonials[currentIndex];
+            imgElement.src = testimonial.img;
+            quoteElement.textContent = `"${testimonial.quote}"`;
+            nameElement.textContent = testimonial.name;
+            companyElement.textContent = testimonial.company;
+            indexElement.textContent = `${currentIndex + 1}/${testimonials.length}`;
+        }
+
+        // Initial Load
+        updateTestimonial();
+
+
+    </script>
+</body>
+
+</html>
