@@ -20,22 +20,25 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/29dcc67fdd.js" crossorigin="anonymous"></script>
-    <title>Responsive Navbar</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <title>MuneemJi Solutions</title>
+    <link rel="icon" href="images/logo.svg" type="image/icon type">
 </head>
 
 <body>
     <nav class="navbar">
-        <div class="logo">MuneemJi</div>
+        <div class="logo"><img src="images/logo.svg" alt=""></div>
         <div class="nav-container">
             <ul class="nav-links">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Connect</a></li>
+                <li><a href="/muneemji/coming-soon.html" class="active">Home</a></li>
+                <li><a href="/muneemji/coming-soon.html">About Us</a></li>
+                <li><a href="/muneemji/coming-soon.html">Services</a></li>
+                <li><a href="/muneemji/coming-soon.html">Connect</a></li>
             </ul>
         </div>
         <div class="buttons">
-            <button class="btn">Start Now</button>
+            <button class="btn" style="background: #3d52a0;
+    border: none; border-radius: 50px; color: white;">Start Now</button>
             <button class="btn primary">Book Free Consultation</button>
         </div>
         <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
@@ -44,7 +47,7 @@
         <button class="floating-button">Start Now</button>
     </div>
     <main>
-        <section class="hero-section">
+        <section class="hero-section wow animate__animated animate__fadeInUp">
             <div class="hero-container">
                 <div class="hero-content">
                     <div class="hero-heading">
@@ -66,40 +69,51 @@
                         Muneemji.
                     </p>
                     <div class="hero-buttons">
-                        <button class="btn btn-primary me-3" style="    background: #3d52a0;
-    border: none;">Start Now</button>
-                        <button class="btn btn-outline-primary">Book Free Consultation</button>
+                        <button class="btn btn-primary me-3" style="background: #3d52a0;
+    border: none; border-radius: 50px;">Start Now</button>
+                        <button class="hero-book-free-consultation-btn btn btn-outline-primary" style="
+                        border-radius: 50px; border: #3d52a0 1px solid; color: #3d52a0;
+                    ">Book Free Consultation</button>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="services-section">
+        <section class="services-section wow animate__animated animate__fadeInUp">
             <h2 class="section-heading">Muneemji Helps You With Everything</h2>
-
-            <div class="tabs-container">
-                <button class="tab active" data-tab="company">Company Registration</button>
-                <button class="tab" data-tab="accounting">Accounting</button>
-                <button class="tab" data-tab="goods">Goods & Services</button>
-                <button class="tab" data-tab="licenses">Business Licenses</button>
+            <div class="tabs-parent-container">
+                <div class="tabs-container">
+                    <button class="tab active" data-tab="company">Company Registration</button>
+                    <button class="tab" data-tab="accounting">Accounting</button>
+                    <button class="tab" data-tab="goods">Goods & Services Tax</button>
+                    <button class="tab" data-tab="licenses">Business Licenses & Registrations</button>
+                    <button class="tab" data-tab="incomeTax">Income Tax</button>
+                    <button class="tab" data-tab="legalCompliances">Legal & Compliances</button>
+                    <button class="tab" data-tab="auditPreparations">Audit Preparation</button>
+                </div>
+                <div class="timeline-container">
+                    <div class="timeline-progress"></div>
+                </div>
             </div>
 
             <div class="content-container">
                 <div class="image-card">
-                    <img src="images/3.png" alt="Business Woman">
+                    <img id="image-card" src="images/1.png" alt="Business Woman">
                 </div>
                 <div class="text-content">
                     <h3 id="content-title">Company Registration</h3>
                     <p id="content-description">
-                        What sets any marketing strategy apart is the human behind it. Share your goals, best creative
-                        assets, and
-                        who your most valuable audiences are to steer AI in the right direction.
+                        We believe starting a business should be simple. With a clear process and structured approach,
+                        company registration becomes seamless and stress-free. From legal requirements to documentation,
+                        everything is handled with precision, ensuring full compliance without hassle. A properly
+                        registered company builds trust, unlocks new opportunities, and creates a solid foundation for
+                        growth.
                     </p>
-                    <a href="#" class="explore-link">Explore <span>&#10148;</span></a>
+                    <a href="/muneemji/coming-soon.html" class="explore-link">Explore <span>&#10148;</span></a>
                 </div>
             </div>
         </section>
 
-        <section class="finance-section">
+        <section class="finance-section wow animate__animated animate__fadeInUp">
             <div class="finance-container">
 
                 <!-- Left Content -->
@@ -107,21 +121,25 @@
                     <p class="finance-subtitle">Benefits</p>
                     <h2 class="finance-heading">With Muneemji, <br> you’re in control of your finances</h2>
                     <p class="finance-description">
-                        What sets any marketing strategy apart is the human behind it.
-                        Share your goals, best creative assets, and who your most valuable audiences
-                        are to steer AI in the right direction.
+                        Numbers matter. Strategy matters more. At Muneemji, we bring both. Our team of CPAs, CAs, CFOs,
+                        and tax experts ensures your business stays compliant, financially strong, and ready for growth.
+                        From accounting to tax planning, audits to legal compliance, we handle the complexities so you
+                        can focus on what’s next. No guesswork, no surprises—just clear insights and smart decisions
+                        that move your business forward.
                     </p>
 
                     <div class="finance-points">
                         <div class="finance-point">
-                            <p>Work Sans. Work Sans is based loosely on early grotesque fonts.</p>
+                            <p>Foresight, Not Just Compliance – We don’t just check the boxes; we anticipate challenges
+                                before they arise.</p>
                             <div class="point-icon">
                                 <i class="fa-solid fa-chart-simple"></i>
                             </div>
 
                         </div>
                         <div class="finance-point">
-                            <p>Work Sans. Work Sans is based loosely on early grotesque fonts.</p>
+                            <p>Seamless Integration – Finance and legal services that fit effortlessly into your
+                                business, not the other way around.</p>
                             <div class="point-icon">
                                 <i class="fa-solid fa-file"></i>
                             </div>
@@ -132,16 +150,18 @@
 
                 <!-- Right Image Section -->
                 <div class="finance-image-box">
-                    <div class="finance-image-wrapper">
-                        <img src="images/5.png" alt="Business Meeting" class="finance-image">
-                        <span class="finance-badge">📊 Business Growth</span>
+                    <div class="finance-frame">
+                        <div class="finance-image-wrapper">
+                            <img src="images/meeting.svg" alt="Business Meeting" class="finance-image">
+                            <!-- <span class="finance-badge">📊 Business Growth</span> -->
+                        </div>
                     </div>
                 </div>
 
             </div>
         </section>
 
-        <section class="potential-section">
+        <section class="potential-section wow animate__animated animate__fadeInUp">
             <div class="potential-container">
                 <!-- Heading -->
                 <h2 class="potential-title">
@@ -153,50 +173,51 @@
                 <div class="potential-content">
                     <div class="potential-box">
                         <div class="potential-image-wrapper">
-                            <img src="images/potential.png" alt="User" class="potential-image">
+                            <img src="images/potential/3.svg" alt="User" class="potential-image">
                         </div>
                         <div class="potential-text">
                             <h3 class="potential-subtitle">2100 People Already Trust Us</h3>
                             <p class="potential-description">
-                                What sets any marketing strategy apart is the human behind it.
-                                Share your goals, best creative assets, and who your most valuable
-                                audiences are to steer AI in the right direction.
+                                Trust isn’t given—it’s earned. From startups to enterprises, businesses across
+                                industries rely on Muneemji for precision, reliability, and results. Our commitment to
+                                accuracy, compliance, and strategic insights keeps our clients ahead, always.
                             </p>
                         </div>
                     </div>
 
                     <div class="potential-box">
                         <div class="potential-image-wrapper">
-                            <img src="images/potential.png" alt="User" class="potential-image">
+                            <img src="images/potential/1.svg" alt="User" class="potential-image">
                         </div>
                         <div class="potential-text">
-                            <h3 class="potential-subtitle">30+ Years Of Excellence</h3>
+                            <h3 class="potential-subtitle">30+ Years of Industry Leadership</h3>
                             <p class="potential-description">
-                                What sets any marketing strategy apart is the human behind it.
-                                Share your goals, best creative assets, and who your most valuable
-                                audiences are to steer AI in the right direction.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="potential-box">
-                        <div class="potential-image-wrapper">
-                            <img src="images/potential.png" alt="User" class="potential-image">
-                        </div>
-                        <div class="potential-text">
-                            <h3 class="potential-subtitle">30+ Years Of Excellence</h3>
-                            <p class="potential-description">
-                                What sets any marketing strategy apart is the human behind it.
-                                Share your goals, best creative assets, and who your most valuable
-                                audiences are to steer AI in the right direction.
+                                Decades of expertise, built on a foundation of integrity and innovation. With over 30
+                                years in finance and legal services, we’ve seen industries evolve—and we’ve evolved with
+                                them. Our experience is your advantage.
                             </p>
                         </div>
                     </div>
 
+                    <div class="potential-box">
+                        <div class="potential-image-wrapper">
+                            <img src="images/potential/2.svg" alt="User" class="potential-image">
+                        </div>
+                        <div class="potential-text">
+                            <h3 class="potential-subtitle">50+ Experts Dedicated to Your Success</h3>
+                            <p class="potential-description">
+                                Behind every number is a team that cares. Our 50+ finance and legal professionals bring
+                                deep knowledge, proactive solutions, and a commitment to helping your business thrive.
+                                When you work with Muneemji, you get more than a service—you get a partner.
+                            </p>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </section>
 
-        <section class="help-section">
+        <section class="help-section wow animate__animated animate__fadeInUp">
             <div id="help-section">
                 <div class="help-image-container">
                     <img src="images/image.png" alt="Expert Assistance">
@@ -211,7 +232,7 @@
         </section>
 
 
-        <section class="finance-section mission-statement-section">
+        <section class="finance-section mission-statement-section wow animate__animated animate__fadeInUp">
             <div class="finance-container">
 
                 <!-- Left Content -->
@@ -219,24 +240,31 @@
                     <h2 class="finance-heading">Mumneemji's</h2>
                     <h2 class="finance-heading">Mission Statement</h2>
                     <p class="finance-description">
-                        What sets any marketing strategy apart is the human behind it. Share your goals, best creative
-                        assets and who your most valuable audiences are to steer AI in the right direction. What sets
-                        any marketing strategy apart is the human behind it.
+                        We’re not the biggest in the industry, but we give our best—every single time. At Muneemji, we
+                        believe businesses deserve more than just financial services; they deserve a partner who cares.
+                        A partner who works late so you don’t have to, who simplifies complexity so you can focus on
+                        what truly matters. We’re here to take the stress out of compliance, the guesswork out of
+                        numbers, and the burden off your shoulders. Because when your business grows, so does our
+                        purpose.
                     </p>
 
                     <div class="finance-points">
                         <div class="finance-point">
-                            <div class="point-icon">
+                            <div class="point-icon" style="width: 132px;">
                                 <i class="fa-solid fa-chart-simple"></i>
                             </div>
-                            <p>Work Sans. Work Sans is based loosely on early grotesque fonts.</p>
+                            <p>
+
+                                We don’t wait for problems to arise. With foresight and strategy, we keep you ahead of
+                                compliance, financial risks, and growth opportunities.</p>
 
                         </div>
                         <div class="finance-point">
                             <div class="point-icon">
                                 <i class="fa-solid fa-file"></i>
                             </div>
-                            <p>Work Sans. Work Sans is based loosely on early grotesque fonts.</p>
+                            <p> No hidden fees, no jargon—just clear, honest advice so you always know where your
+                                business stands.</p>
 
                         </div>
                     </div>
@@ -253,7 +281,7 @@
             </div>
         </section>
 
-        <section class="how-it-works">
+        <section class="how-it-works wow animate__animated animate__fadeInUp">
             <h2>How It Works</h2>
             <div class="steps-container">
                 <div class="step">
@@ -292,7 +320,7 @@
         </section>
 
 
-        <section class="testimonial-section">
+        <section class="testimonial-section wow animate__animated animate__fadeInUp">
             <h2 class="testimonial-title">What <span>Success Story</span> Looks Like</h2>
 
             <div class="testimonial-container">
@@ -347,41 +375,97 @@
             const tabs = document.querySelectorAll(".tab");
             const title = document.getElementById("content-title");
             const description = document.getElementById("content-description");
+            const image = document.getElementById("image-card");
 
             const contentData = {
                 company: {
+                    image: "images/1.png",
                     title: "Company Registration",
-                    description: "What sets any marketing strategy apart is the human behind it. Share your goals, best creative assets, and who your most valuable audiences are to steer AI in the right direction."
+                    description: "We believe starting a business should be simple. With a clear process and structured approach, company registration becomes seamless and stress-free. From legal requirements to documentation, everything is handled with precision, ensuring full compliance without hassle. A properly registered company builds trust, unlocks new opportunities, and creates a solid foundation for growth."
                 },
                 accounting: {
+                    image: "images/2.png",
                     title: "Accounting",
-                    description: "Effortlessly manage your business finances with our expert accounting services, ensuring compliance and financial clarity."
+                    description: "Clear and accurate financial records keep a business running smoothly. With proper accounting and bookkeeping, every transaction is tracked, compliance is maintained, and decision-making becomes easier. From managing expenses to preparing reports, a structured approach ensures transparency and long-term stability."
                 },
                 goods: {
+                    image: "images/3.png",
                     title: "Goods & Services",
-                    description: "Expand your business reach with the best goods and services. Optimize your operations and customer satisfaction."
+                    description: "At Muneemji, we make GST compliance easy. Goods and Services Tax (GST) is a key part of running a business, and proper compliance ensures smooth operations, prevents penalties, and keeps businesses tax-efficient. From registration to filings, every step requires accuracy and timely execution. A well-managed GST process brings clarity, reduces risks, and ensures businesses stay compliant with regulations."
                 },
                 licenses: {
-                    title: "Business Licenses",
-                    description: "Ensure smooth operations with the right business licenses. We help you acquire, renew, and manage them efficiently."
+                    image: "images/4.png",
+                    title: "Business Licenses & Registrations",
+                    description: "We simplify the process of obtaining business licenses and registrations. Every business needs the right approvals to operate legally and build trust. From securing essential licenses to completing registrations, every step requires accuracy and compliance. A properly licensed business avoids legal hurdles, gains credibility, and stays focused on growth."
+                },
+                incomeTax: {
+                    image: "images/5.png",
+                    title: "Income Tax",
+                    description: "No guesswork. No last-minute rush. Just accurate filings, smart planning, and full compliance. At Muneemji, we make taxes simple, so you stay focused on what matters—growing your business."
+                },
+                legalCompliances: {
+                    image: "images/6.png",
+                    title: "Legal & Compliances",
+                    description: "Stay compliant without the confusion. From business regulations to legal formalities, every detail is handled with precision. Muneemji ensures your business runs smoothly, risk-free, and always on the right side of the law."
+                },
+                auditPreparations: {
+                    image: "images/7.png",
+                    title: "Audit Preparation",
+                    description: "A smooth audit starts with well-organized records and accurate financial reports. Missing documents and last-minute stress can lead to delays and compliance issues. At Muneemji, we ensure everything is in place, so your business stays audit-ready, confident, and compliant—every time."
                 }
             };
 
+            function updateContent(tab) {
+                tabs.forEach(t => t.classList.remove("active"));
+                tab.classList.add("active");
+
+                const selectedTab = tab.getAttribute("data-tab");
+                image.src = contentData[selectedTab].image;
+                title.textContent = contentData[selectedTab].title;
+                description.textContent = contentData[selectedTab].description;
+            }
+
             tabs.forEach(tab => {
-                tab.addEventListener("click", () => {
-                    tabs.forEach(t => t.classList.remove("active"));
-                    tab.classList.add("active");
-
-                    const selectedTab = tab.getAttribute("data-tab");
-                    title.textContent = contentData[selectedTab].title;
-                    description.textContent = contentData[selectedTab].description;
-                });
+                tab.addEventListener("click", () => updateContent(tab));
             });
+
+            let currentIndex = 0;
+
+            function autoSwitchTabs() {
+                const currentTab = tabs[currentIndex];
+                updateContent(currentTab);
+                currentIndex = (currentIndex + 1) % tabs.length; // Loop back to the first tab after the last one
+            }
+
+            function startProgress() {
+                const progressBar = document.querySelector('.timeline-progress');
+
+                // Start filling the progress bar
+                progressBar.style.width = '100%';
+
+                setTimeout(() => {
+                    // Reset width back to 0% after 3 sec
+                    progressBar.style.transition = 'none'; // Remove transition for instant reset
+                    progressBar.style.width = '0%';
+
+                    setTimeout(() => {
+                        // Reapply transition and restart animation
+                        progressBar.style.transition = 'width 5s linear';
+                        startProgress();
+                    }, 100); // Small delay before restarting
+                }, 5000);
+
+                setTimeout(() => {
+                    autoSwitchTabs();
+                }, 5000);
+
+
+            }
+
+            startProgress();
+
+            // setInterval(autoSwitchTabs, 5000); // Switch tabs every 3 seconds
         });
-
-
-
-
 
         const testimonials = [
             {
@@ -448,7 +532,7 @@
 
         // Initial Load
         updateTestimonial();
-
+        new WOW().init();
 
     </script>
 </body>

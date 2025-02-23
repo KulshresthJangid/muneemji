@@ -1,5 +1,4 @@
 .finance-section {
-  width: 90%;
   max-width: 1200px;
   margin: auto;
   padding: 50px 0;
@@ -10,6 +9,8 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
+  gap: 20px; /* Added gap for spacing between elements */
 }
 
 /* Left Side - Text */
@@ -21,19 +22,22 @@
 }
 
 .finance-subtitle {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #666;
   margin-bottom: 10px;
+  text-align: right;
 }
 
 .finance-heading {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 15px;
+  text-align: right;
 }
 
 .finance-description {
+  text-align: right;
   font-size: 1rem;
   color: #444;
   line-height: 1.5;
@@ -53,6 +57,10 @@
   gap: 10px;
 }
 
+.finance-frame {
+  max-width: 76vh;
+}
+
 .finance-icon {
   font-size: 1.2rem;
   color: #4a4a9e;
@@ -63,22 +71,25 @@
   flex: 1;
   display: flex;
   justify-content: center;
-  padding: 20px;
+  background-color: #3d52a0;
+  border-radius: 60px 0px 0px 60px;
+  height: 60vh;
 }
 
 .finance-image-wrapper {
   position: relative;
   width: 500px;
+  max-height: 92vh;
   border-radius: 60px 0px 60px 0px;
-  overflow: hidden;
-  /* border: 6px solid #6c63ff; */
   padding: 12px;
-  background-color: #8e89f3;
 }
 
 .finance-image {
-  width: 100%;
+  width: 150%;
+  height: auto; /* Make image responsive */
   border-radius: 10px;
+  object-fit: cover;
+  transform: translate(-83px, -161px);
 }
 
 .finance-badge {
@@ -95,33 +106,38 @@
 .point-icon {
   background-color: #3d52a0;
   height: 50px;
-  width: 60px;
+  width: 96px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-.point-icon i{
+.point-icon i {
   color: white;
 }
 
 .finance-point:not(:last-child) .point-icon::after {
   content: "";
   position: absolute;
-  top: 100%; /* Starts from bottom of the icon */
+  top: 100%;
   left: 50%;
   width: 2px;
-  height: 30px; /* Length of line */
+  height: 30px;
   background-color: #4a4a9e;
   transform: translateX(-50%);
 }
+
 .mission-statement-section .finance-point {
   text-align: left;
 }
 
+.mission-statement-section .finance-image-box{
+  background-color: white;
+}
+
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .finance-container {
     flex-direction: column;
     text-align: center;
@@ -131,7 +147,11 @@
   .finance-text {
     max-width: 100%;
     padding: 0 15px;
-    /* Add padding to prevent text from touching edges */
+  }
+
+  .finance-image {
+    transform: translate(0px, 0px);
+    width: 46vh;
   }
 
   .finance-image-box {
@@ -140,10 +160,60 @@
 
   .finance-image-wrapper {
     width: 90%;
-    /* Ensure image shrinks on smaller screens */
   }
-  .point-icon{
+
+  .point-icon {
     height: 54px;
     width: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .finance-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .finance-text {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .finance-image-wrapper {
+    width: 100%;
+  }
+
+  .point-icon {
+    height: 50px;
+    width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .finance-section {
+    padding: 30px 15px;
+  }
+
+  .finance-text {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .finance-heading {
+    font-size: 2rem;
+  }
+
+  .finance-description {
+    font-size: 0.9rem;
+  }
+
+  .finance-points {
+    gap: 10px;
+  }
+
+  .point-icon {
+    height: 45px;
+    width: 70px;
   }
 }

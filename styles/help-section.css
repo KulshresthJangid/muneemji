@@ -64,7 +64,6 @@ p {
   content: "";
   position: absolute;
   top: 50px;
-  /* Align with the step circles */
   left: 10%;
   width: 80%;
   height: 3px;
@@ -76,27 +75,113 @@ p {
   color: white;
 }
 
+.help-text-container p {
+  color: white;
+}
 
 /* Responsive Design */
-@media (max-width: 768px) {
-
-  #help-section {
-    flex-direction: column;
-    text-align: center;
-  }
-
-
-  .help-section {
-    padding: 40px;
-  }
-
+@media (max-width: 1024px) {
   .steps-container {
     flex-direction: column;
     gap: 30px;
   }
 
   .steps-container::before {
+    display: none; /* Remove line between steps on medium screens */
+  }
+
+  .step {
+    max-width: 90%;
+    /* Make each step more flexible to fit within smaller viewports */
+  }
+
+  .icon {
+    font-size: 36px;
+    /* Slightly reduce the icon size for smaller devices */
+  }
+
+  h3 {
+    font-size: 20px;
+    /* Adjust heading size */
+  }
+
+  p {
+    font-size: 12px;
+    /* Adjust text size for readability */
+  }
+}
+
+@media (max-width: 768px) {
+  .how-it-works h2 {
+    font-size: 28px;
+    /* Reduce heading size on small screens */
+  }
+
+  .steps-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .step {
+    max-width: 90%;
+    /* Make steps take up more space on smaller screens */
+  }
+
+  .icon {
+    font-size: 30px;
+    /* Adjust icon size for small screens */
+  }
+
+  h3 {
+    font-size: 18px;
+    /* Adjust heading size for smaller screens */
+  }
+
+  p {
+    font-size: 12px;
+    /* Adjust text size for readability */
+  }
+
+  /* Hide the line between steps */
+  .steps-container::before {
     display: none;
-    /* Remove line on mobile for better spacing */
+  }
+}
+
+@media (max-width: 480px) {
+  .how-it-works {
+    padding: 30px 10px;
+    /* Reduce padding for mobile screens */
+  }
+
+  .how-it-works h2 {
+    font-size: 24px;
+    /* Make the heading smaller on mobile */
+  }
+
+  .steps-container {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 15px;
+  }
+
+  .step {
+    max-width: 100%;
+    /* Ensure steps take full width on mobile */
+  }
+
+  .icon {
+    font-size: 28px;
+    /* Adjust icon size for smaller screens */
+  }
+
+  h3 {
+    font-size: 16px;
+    /* Smaller heading size on mobile */
+  }
+
+  p {
+    font-size: 12px;
+    /* Adjust font size for readability */
   }
 }
